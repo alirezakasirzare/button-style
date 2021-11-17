@@ -1,5 +1,5 @@
 /* buttons */
-.danger-btn, .success-btn, .warning-btn, .light-btn, .dark-btn, .primary-btn {
+.btn-danger, .btn-success, .btn-warning, .btn-light, .btn-dark, .btn-primary {
   padding: 0.625rem 1.5625rem;
   border-radius: 0.313rem;
   color: #fff;
@@ -10,10 +10,10 @@
   position: relative;
   overflow: hidden;
 }
-.danger-btn:hover:not(.disabled):not([disabled]), .success-btn:hover:not(.disabled):not([disabled]), .warning-btn:hover:not(.disabled):not([disabled]), .light-btn:hover:not(.disabled):not([disabled]), .dark-btn:hover:not(.disabled):not([disabled]), .primary-btn:hover:not(.disabled):not([disabled]) {
+.btn-danger:hover:not(.disabled):not([disabled]), .btn-success:hover:not(.disabled):not([disabled]), .btn-warning:hover:not(.disabled):not([disabled]), .btn-light:hover:not(.disabled):not([disabled]), .btn-dark:hover:not(.disabled):not([disabled]), .btn-primary:hover:not(.disabled):not([disabled]) {
   background-color: #626262;
 }
-.danger-btn::after, .success-btn::after, .warning-btn::after, .light-btn::after, .dark-btn::after, .primary-btn::after {
+.btn-danger::after, .btn-success::after, .btn-warning::after, .btn-light::after, .btn-dark::after, .btn-primary::after {
   content: "";
   visibility: hidden;
   width: 0.612rem;
@@ -25,56 +25,56 @@
   background-color: rgba(255, 255, 255, 0.3);
   transition: 0.2s ease left;
 }
-.danger-btn:active:not(.disabled):not([disabled])::after, .success-btn:active:not(.disabled):not([disabled])::after, .warning-btn:active:not(.disabled):not([disabled])::after, .light-btn:active:not(.disabled):not([disabled])::after, .dark-btn:active:not(.disabled):not([disabled])::after, .primary-btn:active:not(.disabled):not([disabled])::after {
+.btn-danger:active:not(.disabled):not([disabled])::after, .btn-success:active:not(.disabled):not([disabled])::after, .btn-warning:active:not(.disabled):not([disabled])::after, .btn-light:active:not(.disabled):not([disabled])::after, .btn-dark:active:not(.disabled):not([disabled])::after, .btn-primary:active:not(.disabled):not([disabled])::after {
   left: 130%;
   visibility: visible;
 }
-.disabled.danger-btn, .disabled.success-btn, .disabled.warning-btn, .disabled.light-btn, .disabled.dark-btn, .disabled.primary-btn, [disabled].danger-btn, [disabled].success-btn, [disabled].warning-btn, [disabled].light-btn, [disabled].dark-btn, [disabled].primary-btn {
+.disabled.btn-danger, .disabled.btn-success, .disabled.btn-warning, .disabled.btn-light, .disabled.btn-dark, .disabled.btn-primary, [disabled].btn-danger, [disabled].btn-success, [disabled].btn-warning, [disabled].btn-light, [disabled].btn-dark, [disabled].btn-primary {
   opacity: 0.7;
   cursor: auto !important;
 }
 
-.primary-btn {
+.btn-primary {
   background-color: #008CBA;
   border-color: #00b2ed;
 }
-.primary-btn:hover:not(.disabled):not([disabled]) {
+.btn-primary:hover:not(.disabled):not([disabled]) {
   background-color: #009fd4 !important;
 }
 
-.light-btn {
+.btn-light {
   background-color: #e7e7e7;
   border-color: #e1e1e1;
   color: #1a1a1a;
 }
-.light-btn:hover:not(.disabled):not([disabled]) {
+.btn-light:hover:not(.disabled):not([disabled]) {
   background-color: #f4f4f4 !important;
 }
-.light-btn::after {
+.btn-light::after {
   background-color: rgba(26, 26, 26, 0.1);
 }
 
-.warning-btn {
+.btn-warning {
   background-color: #eba029;
   border-color: #efb558;
 }
-.warning-btn:hover:not(.disabled):not([disabled]) {
+.btn-warning:hover:not(.disabled):not([disabled]) {
   background-color: #edaa40 !important;
 }
 
-.success-btn {
+.btn-success {
   background-color: #4CAF50;
   border-color: #6ec071;
 }
-.success-btn:hover:not(.disabled):not([disabled]) {
+.btn-success:hover:not(.disabled):not([disabled]) {
   background-color: #5cb860 !important;
 }
 
-.danger-btn {
+.btn-danger {
   background-color: #f44336;
   border-color: #f77066;
 }
-.danger-btn:hover:not(.disabled):not([disabled]) {
+.btn-danger:hover:not(.disabled):not([disabled]) {
   background-color: #f55a4e !important;
 }
 

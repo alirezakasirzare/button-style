@@ -17,4 +17,4 @@
 
 
 
-and for make disable the button you should add class "disaled" or disabled attribute
+**and for make disable the button you should add class "disabled" or disabled attribute**
