@@ -15,17 +15,19 @@
 }
 .danger-btn::after, .success-btn::after, .warning-btn::after, .light-btn::after, .dark-btn::after, .primary-btn::after {
   content: "";
-  width: 0;
+  visibility: hidden;
+  width: 0.612rem;
   transform: rotate(-30deg);
   height: 130%;
   position: absolute;
   left: -30%;
-  top: 0;
-  box-shadow: 0 0 0.513rem 0.04rem #fff;
+  top: -15%;
+  background-color: rgba(255, 255, 255, 0.3);
   transition: 0.2s ease left;
 }
 .danger-btn:active:not(.disabled):not([disabled])::after, .success-btn:active:not(.disabled):not([disabled])::after, .warning-btn:active:not(.disabled):not([disabled])::after, .light-btn:active:not(.disabled):not([disabled])::after, .dark-btn:active:not(.disabled):not([disabled])::after, .primary-btn:active:not(.disabled):not([disabled])::after {
   left: 130%;
+  visibility: visible;
 }
 .disabled.danger-btn, .disabled.success-btn, .disabled.warning-btn, .disabled.light-btn, .disabled.dark-btn, .disabled.primary-btn, [disabled].danger-btn, [disabled].success-btn, [disabled].warning-btn, [disabled].light-btn, [disabled].dark-btn, [disabled].primary-btn {
   opacity: 0.7;
@@ -49,7 +51,7 @@
   background-color: #f4f4f4 !important;
 }
 .light-btn::after {
-  box-shadow: 0 0 0.513rem 0.04rem #999;
+  background-color: rgba(26, 26, 26, 0.1);
 }
 
 .warning-btn {

@@ -32,17 +32,19 @@ $lg-size: $md-size*1.5;
     }
     &::after{
         content: "";
-        width: 0;
+        visibility: hidden;
+        width: 0.612rem;
         transform: rotate(-30deg);
         height: 130%;
         position: absolute;
         left: -30%;
-        top: 0;
-        box-shadow: 0 0 0.513rem 0.04rem #fff;
+        top: -15%;
+        background-color: rgba($white-color, 0.3);
         transition: 0.2s ease left;
     }
     &:active:not(.disabled):not([disabled])::after{
-        left: 130%
+        left: 130%;
+        visibility: visible;
     }
     &.disabled,
     &[disabled]{
@@ -74,7 +76,7 @@ $lg-size: $md-size*1.5;
         background-color: lighten($light-color, 5%) !important;
     }
     &::after{
-        box-shadow: 0 0 0.513rem 0.04rem #999;
+        background-color: rgba($black-color, 0.1);
     }
 }
 
