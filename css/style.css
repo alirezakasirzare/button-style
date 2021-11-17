@@ -1,6 +1,6 @@
 /* buttons */
 .danger-btn, .success-btn, .warning-btn, .light-btn, .dark-btn, .primary-btn {
-  padding: 0.625rem 1.25rem;
+  padding: 0.625rem 1.5625rem;
   border-radius: 0.313rem;
   color: #fff;
   background-color: #555555;
@@ -70,4 +70,15 @@
 }
 .danger-btn:hover {
   background-color: #f55a4e;
+}
+
+/* sizing button */
+.btn-sm {
+  padding: 0.4166666667rem 1.0416666667rem !important;
+  font-size: 0.8rem;
+}
+
+.btn-lg {
+  padding: 0.9375rem 2.34375rem !important;
+  font-size: 1.2rem;
 }
