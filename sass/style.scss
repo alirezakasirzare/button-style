@@ -27,7 +27,7 @@ $lg-size: $md-size*1.5;
     font-size: 1rem;
     position: relative;
     overflow: hidden;
-    &:hover{
+    &:hover:not(.disabled):not([disabled]){
         background-color: lighten($dark-color, 5%);
     }
     &::after{
@@ -41,8 +41,13 @@ $lg-size: $md-size*1.5;
         box-shadow: 0 0 0.513rem 0.04rem #fff;
         transition: 0.2s ease left;
     }
-    &:active::after{
+    &:active:not(.disabled):not([disabled])::after{
         left: 130%
+    }
+    &.disabled,
+    &[disabled]{
+        opacity: 0.7; 
+        cursor: auto !important;
     }
     
 }
@@ -51,8 +56,8 @@ $lg-size: $md-size*1.5;
     @extend %btn;
     background-color: $primary-color;
     border-color: lighten($primary-color, 10%);
-    &:hover{
-        background-color: lighten($primary-color, 5%);
+    &:hover:not(.disabled):not([disabled]){
+        background-color: lighten($primary-color, 5%) !important;
     }
 }
 
@@ -65,8 +70,8 @@ $lg-size: $md-size*1.5;
     background-color: $light-color;
     border-color: lighten($dark-color, 55%);
     color: $black-color;
-    &:hover{
-        background-color: lighten($light-color, 5%);
+    &:hover:not(.disabled):not([disabled]){
+        background-color: lighten($light-color, 5%) !important;
     }
     &::after{
         box-shadow: 0 0 0.513rem 0.04rem #999;
@@ -77,8 +82,8 @@ $lg-size: $md-size*1.5;
     @extend %btn;
     background-color: $warning-color;
     border-color: lighten($warning-color, 10%);
-    &:hover{
-        background-color: lighten($warning-color, 5%);
+    &:hover:not(.disabled):not([disabled]){
+        background-color: lighten($warning-color, 5%) !important;
     }
 }
 
@@ -86,8 +91,8 @@ $lg-size: $md-size*1.5;
     @extend %btn;
     background-color: $success-color;
     border-color: lighten($success-color, 10%);
-    &:hover{
-        background-color: lighten($success-color, 5%);
+    &:hover:not(.disabled):not([disabled]){
+        background-color: lighten($success-color, 5%) !important;
     }
 }
 
@@ -95,8 +100,8 @@ $lg-size: $md-size*1.5;
     @extend %btn;
     background-color: $danger-color;
     border-color: lighten($danger-color, 10%);
-    &:hover{
-        background-color: lighten($danger-color, 5%);
+    &:hover:not(.disabled):not([disabled]){
+        background-color: lighten($danger-color, 5%) !important;
     }
 }
 
