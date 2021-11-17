@@ -8,6 +8,7 @@
   cursor: pointer;
   font-size: 1rem;
   position: relative;
+  margin: 0.325rem 0.4rem;
   overflow: hidden;
 }
 .btn-danger:hover:not(.disabled):not([disabled]), .btn-success:hover:not(.disabled):not([disabled]), .btn-warning:hover:not(.disabled):not([disabled]), .btn-light:hover:not(.disabled):not([disabled]), .btn-dark:hover:not(.disabled):not([disabled]), .btn-primary:hover:not(.disabled):not([disabled]) {
