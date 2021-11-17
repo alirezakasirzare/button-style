@@ -1,7 +1,7 @@
 # button-style
 
 
-** type of buttons : **
+**type of buttons :**
 - .btn-primary
 - .btn-danger
 - .btn-dark
@@ -10,7 +10,7 @@
 - .btn-warning
 
 
-** size of buttons : **
+**size of buttons :**
 - .btn-sm
 - .btn-lg
 

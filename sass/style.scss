@@ -54,7 +54,7 @@ $lg-size: $md-size*1.5;
     
 }
 
-.primary-btn{
+.btn-primary{
     @extend %btn;
     background-color: $primary-color;
     border-color: lighten($primary-color, 10%);
@@ -63,11 +63,11 @@ $lg-size: $md-size*1.5;
     }
 }
 
-.dark-btn{
+.btn-dark{
     @extend %btn;
 }
 
-.light-btn{
+.btn-light{
     @extend %btn;
     background-color: $light-color;
     border-color: lighten($dark-color, 55%);
@@ -80,7 +80,7 @@ $lg-size: $md-size*1.5;
     }
 }
 
-.warning-btn{
+.btn-warning{
     @extend %btn;
     background-color: $warning-color;
     border-color: lighten($warning-color, 10%);
@@ -89,7 +89,7 @@ $lg-size: $md-size*1.5;
     }
 }
 
-.success-btn{
+.btn-success{
     @extend %btn;
     background-color: $success-color;
     border-color: lighten($success-color, 10%);
@@ -98,7 +98,7 @@ $lg-size: $md-size*1.5;
     }
 }
 
-.danger-btn{
+.btn-danger{
     @extend %btn;
     background-color: $danger-color;
     border-color: lighten($danger-color, 10%);
